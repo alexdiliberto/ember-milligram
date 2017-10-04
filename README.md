@@ -1,4 +1,6 @@
 # ember-milligram
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/alexdiliberto/ember-milligram.svg)](https://greenkeeper.io/)
 [![Build status][travis-badge]][travis-url]
 [![Commitizen friendly][cz-badge]][cz-cli-url]
 
