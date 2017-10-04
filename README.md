@@ -1,26 +1,31 @@
 # ember-milligram
+[![Build status][travis-badge]][travis-url]
+[![Commitizen friendly][cz-badge]][cz-cli-url]
 
-This README outlines the details of collaborating on this Ember addon.
+A minimalist CSS framework for Ember.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-milligram`
-* `npm install`
+```sh
+ember install ember-milligram
+```
 
-## Running
+This will install [ember-cli-sass](https://github.com/aexmachina/ember-cli-sass) as a dependency and create a file `<app-name>/app/styles/app.scss` with the following import statement:
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+```scss
+@import "milligram";
+```
 
-## Running Tests
+Please note that [ember-cli-sass](https://github.com/aexmachina/ember-cli-sass) is currently required to use this addon.
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+## License
 
-## Building
+MIT Copyright (c) [Alex DiLiberto](https://alexdiliberto.com/)
 
-* `ember build`
+[Milligram](http://milligram.io/) was designed with ♥ by [CJ Patoilo](http://cjpatoilo.com/). Licensed under the [MIT License](https://github.com/milligram/milligram/blob/master/license).
 
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+
+[travis-badge]: https://travis-ci.org/alexdiliberto/ember-milligram.svg?branch=master
+[travis-url]: https://travis-ci.org/alexdiliberto/ember-milligram
+[cz-badge]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
+[cz-cli-url]: https://commitizen.github.io/cz-cli/

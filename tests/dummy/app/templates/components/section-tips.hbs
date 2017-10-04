@@ -1,0 +1,187 @@
+  <h3 class="title">Tips</h3>
+
+  <p class="description">Tips, techniques, and best practice on using Cascading Style
+  Sheets.</p>
+
+  <p><strong>Mobile First</strong></p>
+
+  <p>The Mobile First is the design strategy that takes priority development for mobile
+  devices like smartphones and tablets. It means all styles outside of a media queries
+  apply to all devices, then larger screens are targeted for enhancement. This prevents
+  small devices from having to parse tons of unused CSS. Milligram use some breakpoints
+  like these:</p>
+
+  <div class="example">
+    <div class="row">
+      <ul>
+        <li>Larger than <strong>Mobile</strong> screen: 40.0rem <span class=
+        "heading-font-size">(640px)</span></li>
+
+        <li>Larger than <strong>Tablet</strong> screen: 80.0rem <span class=
+        "heading-font-size">(1280px)</span></li>
+
+        <li>Larger than <strong>Desktop</strong> screen: 120.0rem <span class=
+        "heading-font-size">(1920px)</span></li>
+      </ul>
+    </div>
+  </div>
+  <pre class="code prettyprint prettyprinted"><code class="code-content"><span class=
+"com">/* Mobile First Media Queries */</span><span class="pln">
+
+</span><span class="com">/* Base style */</span><span class="pln">
+</span><span class="pun">{</span><span class="pln"> </span><span class=
+"pun">...</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+
+</span><span class="com">/* Larger than mobile screen */</span><span class="pln">
+</span><span class="lit">@media</span><span class="pln"> </span><span class=
+"pun">(</span><span class="pln">min</span><span class="pun">-</span><span class=
+"pln">width</span><span class="pun">:</span><span class="pln"> </span><span class=
+"lit">40.0rem</span><span class="pun">)</span><span class="pln"> </span><span class=
+"pun">{</span><span class="pln"> </span><span class="pun">...</span><span class=
+"pln"> </span><span class="pun">}</span><span class="pln">
+
+</span><span class="com">/* Larger than tablet screen */</span><span class="pln">
+</span><span class="lit">@media</span><span class="pln"> </span><span class=
+"pun">(</span><span class="pln">min</span><span class="pun">-</span><span class=
+"pln">width</span><span class="pun">:</span><span class="pln"> </span><span class=
+"lit">80.0rem</span><span class="pun">)</span><span class="pln"> </span><span class=
+"pun">{</span><span class="pln"> </span><span class="pun">...</span><span class=
+"pln"> </span><span class="pun">}</span><span class="pln">
+
+</span><span class="com">/* Larger than desktop screen */</span><span class="pln">
+</span><span class="lit">@media</span><span class="pln"> </span><span class=
+"pun">(</span><span class="pln">min</span><span class="pun">-</span><span class=
+"pln">width</span><span class="pun">:</span><span class="pln"> </span><span class=
+"lit">120.0rem</span><span class="pun">)</span><span class="pln"> </span><span class=
+"pun">{</span><span class="pln"> </span><span class="pun">...</span><span class=
+"pln"> </span><span class="pun">}</span></code></pre>
+
+  <p><strong>Embed Font</strong></p>
+
+  <p><strong>Milligram</strong> uses the <code>font-family</code> <a href=
+  "https://www.google.com/fonts/specimen/Roboto" title="Roboto by Christian Robertson"
+  target="_blank">Roboto</a>, created by <u>Christian Robertson</u>, and provided by
+  Google. Customize your projects using <a href="https://fonts.google.com">Google
+  Fonts</a>. To embed your selected fonts into a webpage, copy this code into the of your
+  HTML document.</p>
+  <pre class="code prettyprint prettyprinted"><code class="code-content"><span class="com">/* Embed Font */</span><span class="pln">
+</span><span class="pun">&lt;</span><span class="pln">link rel</span><span class=
+"pun">=</span><span class="str">"stylesheet"</span><span class=
+"pln"> href</span><span class="pun">=</span><span class=
+"str">"//fonts.googleapis.com/css?family=Roboto+Slab"</span><span class=
+"pun">&gt;</span><span class="pln">
+
+</span><span class=
+"com">/* Use the following CSS rules to specify these families */</span><span class=
+"pln">
+body </span><span class="pun">{</span><span class="pln">
+  font</span><span class="pun">-</span><span class="pln">family</span><span class=
+"pun">:</span><span class="pln"> </span><span class=
+"str">'Roboto Slab'</span><span class="pun">,</span><span class=
+"pln"> serif</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+  <p><strong>Extending The Inheritances</strong></p>
+
+  <p>The style of an element can be defined in several different locations, which
+  interact in a complex way. It is this form of interaction makes CSS powerful, but it
+  can make it confusing and difficult to debug.</p>
+
+  <div class="example">
+    <div class="row">
+      <div class="column">
+        <a class="button" href="javascript:%20void(0)">Default .button</a><a class=
+        "button button-outline" href="javascript:%20void(0)">Outlined
+        .button</a><a class="button button-clear" href="javascript:%20void(0)">Clear
+        .button</a>
+      </div>
+
+      <div class="column">
+        <a class="button button-black" href=
+        "javascript:%20void(0)">.button-black</a><a class=
+        "button button-black button-outline" href=
+        "javascript:%20void(0)">.button-black</a><a class=
+        "button button-black button-clear" href="javascript:%20void(0)">.button-black</a>
+      </div>
+
+      <div class="column column-20">
+        <a class="button button-small" href=
+        "javascript:%20void(0)">.button-small</a><a class=
+        "button button-small button-outline" href=
+        "javascript:%20void(0)">.button-small</a><a class=
+        "button button-small button-clear" href="javascript:%20void(0)">.button-small</a>
+      </div>
+
+      <div class="column">
+        <a class="button button-large" href=
+        "javascript:%20void(0)">.button-large</a><a class=
+        "button button-large button-outline" href=
+        "javascript:%20void(0)">.button-large</a><a class=
+        "button button-large button-clear" href="javascript:%20void(0)">.button-large</a>
+      </div>
+    </div>
+  </div>
+  <pre class="code prettyprint prettyprinted"><code class="code-content"><span class=
+"com">/* Extending The Inheritances */</span><span class="pln">
+
+</span><span class="com">/* Custom color */</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">button</span><span class=
+"pun">-</span><span class="pln">black </span><span class="pun">{</span><span class="pln">
+  background</span><span class="pun">-</span><span class="pln">color</span><span class=
+"pun">:</span><span class="pln"> black</span><span class="pun">;</span><span class="pln">
+  border</span><span class="pun">-</span><span class="pln">color</span><span class=
+"pun">:</span><span class="pln"> black</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">button</span><span class=
+"pun">-</span><span class="pln">black</span><span class="pun">.</span><span class=
+"pln">button</span><span class="pun">-</span><span class="pln">clear</span><span class=
+"pun">,</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">button</span><span class=
+"pun">-</span><span class="pln">black</span><span class="pun">.</span><span class=
+"pln">button</span><span class="pun">-</span><span class=
+"pln">outline </span><span class="pun">{</span><span class="pln">
+  background</span><span class="pun">-</span><span class="pln">color</span><span class=
+"pun">:</span><span class="pln"> transparent</span><span class="pun">;</span><span class=
+"pln">
+  color</span><span class="pun">:</span><span class="pln"> black</span><span class=
+"pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">button</span><span class=
+"pun">-</span><span class="pln">black</span><span class="pun">.</span><span class=
+"pln">button</span><span class="pun">-</span><span class="pln">clear </span><span class=
+"pun">{</span><span class="pln">
+  border</span><span class="pun">-</span><span class="pln">color</span><span class=
+"pun">:</span><span class="pln"> transparent</span><span class="pun">;</span><span class=
+"pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="com">/* Custom size */</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">button</span><span class=
+"pun">-</span><span class="pln">small </span><span class="pun">{</span><span class="pln">
+  font</span><span class="pun">-</span><span class="pln">size</span><span class=
+"pun">:</span><span class="pln"> </span><span class="pun">.</span><span class=
+"lit">8rem</span><span class="pun">;</span><span class="pln">
+  height</span><span class="pun">:</span><span class="pln"> </span><span class=
+"lit">2.8rem</span><span class="pun">;</span><span class="pln">
+  line</span><span class="pun">-</span><span class="pln">height</span><span class=
+"pun">:</span><span class="pln"> </span><span class="lit">2.8rem</span><span class=
+"pun">;</span><span class="pln">
+  padding</span><span class="pun">:</span><span class="pln"> </span><span class=
+"lit">0</span><span class="pln"> </span><span class="lit">1.5rem</span><span class=
+"pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">.</span><span class="pln">button</span><span class=
+"pun">-</span><span class="pln">large </span><span class="pun">{</span><span class="pln">
+  font</span><span class="pun">-</span><span class="pln">size</span><span class=
+"pun">:</span><span class="pln"> </span><span class="lit">1.4rem</span><span class=
+"pun">;</span><span class="pln">
+  height</span><span class="pun">:</span><span class="pln"> </span><span class=
+"lit">4.5rem</span><span class="pun">;</span><span class="pln">
+  line</span><span class="pun">-</span><span class="pln">height</span><span class=
+"pun">:</span><span class="pln"> </span><span class="lit">4.5rem</span><span class=
+"pun">;</span><span class="pln">
+  padding</span><span class="pun">:</span><span class="pln"> </span><span class=
+"lit">0</span><span class="pln"> </span><span class="lit">2rem</span><span class=
+"pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
