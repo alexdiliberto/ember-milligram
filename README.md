@@ -1,10 +1,32 @@
-# ember-milligram
+<h1 align="center">
+  <img width="232px" height="335px" src="https://cdn.rawgit.com/alexdiliberto/ember-milligram/master/tests/dummy/public/img/logo.svg" alt="Milligram Logo">
+  <br>
+  <a href="https://alexdiliberto.com/ember-milligram">ember-milligram</a>
+  <br>
+</h1>
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/alexdiliberto/ember-milligram.svg)](https://greenkeeper.io/)
-[![Build status][travis-badge]][travis-url]
-[![Commitizen friendly][cz-badge]][cz-cli-url]
+<p align="center">
+  <a href="http://emberobserver.com/addons/ember-transformicons">
+    <img src="http://emberobserver.com/badges/ember-transformicons.svg"
+      alt="Ember Observer Score">
+  </a>
+  <a href="https://travis-ci.org/alexdiliberto/ember-milligram">
+    <img src="https://travis-ci.org/alexdiliberto/ember-milligram.svg?branch=master"
+      alt="Build status">
+  </a>
+  <a href="https://commitizen.github.io/cz-cli/">
+    <img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg"
+      alt="Commitizen friendly">
+  </a>
+  <a href="https://greenkeeper.io/">
+    <img src="https://badges.greenkeeper.io/alexdiliberto/ember-transformicons.svg"
+      alt="Greenkeeper Badge">
+  </a>
+</p>
 
-A minimalist CSS framework for Ember.
+<h3 align="center">
+  A minimalist CSS framework for Ember
+</h3>
 
 ## Installation
 
