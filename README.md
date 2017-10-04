@@ -42,6 +42,18 @@ This will install [ember-cli-sass](https://github.com/aexmachina/ember-cli-sass)
 
 Please note that [ember-cli-sass](https://github.com/aexmachina/ember-cli-sass) is currently required to use this addon.
 
+## Development
+
+### Deploy
+
+```sh
+# Runs test suite, bumps version, pushes tags, publishes, updates CHANGELOG.md
+yarn run deploy
+
+# Publish a new copy the dummy app to gh-pages
+ember deploy production
+```
+
 ## License
 
 MIT Copyright (c) [Alex DiLiberto](https://alexdiliberto.com/)
