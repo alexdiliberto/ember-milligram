@@ -6,27 +6,39 @@ const path = require('path');
 module.exports = {
   name: 'ember-milligram',
 
-  included(app, parentAddon) {
+  included() {
     this._super.included.apply(this, arguments);
 
-    var target = parentAddon || app;
+    let app;
 
-    // allow addon to be nested - see: https://github.com/ember-cli/ember-cli/issues/3718
-    if (target.app) {
-      target = target.app;
+    // Use the  `_findHost()` method if available (in ember-cli >= 2.7.0)
+    if (typeof this._findHost === 'function') {
+      app = this._findHost();
+    } else {
+      // Otherwise, we'll use the copied `_findHost()` implementation borrowed from ember-cli
+      // https://github.com/ember-cli/ember-cli/blob/v2.15.1/lib/models/addon.js#L614-L625
+      let current = this;
+      do {
+        app = current.app || app;
+      } while (current.parent.parent && (current = current.parent));
     }
 
-    // see: http://ember-cli.com/extending/#broccoli-build-options-for-in-repo-addons
-    target.options = target.options || {};
-    target.options.sassOptions = target.options.sassOptions || {};
-    target.options.sassOptions.includePaths = target.options.sassOptions.includePaths || [];
+    this.app = app;
 
-    // Build path to Milligram `.sass` source directory
-    // `milligram.sass` is the base export file
-    // So, in our App's app.scss we import via: `@import "milligram"`
-    var milligramSassPath = path.join(target.project.root, 'node_modules', 'milligram', 'src');
+    // https://ember-cli.com/extending/#broccoli-build-options-for-in-repo-addons
+    app.options = app.options || {};
+    app.options.sassOptions = app.options.sassOptions || {};
+    app.options.sassOptions.includePaths = app.options.sassOptions.includePaths || [];
 
-    // Import `.sass` dependencies
-    target.options.sassOptions.includePaths.push(milligramSassPath);
+    // resolve the filename location of the dist `milligram.css`
+    // https://nodejs.org/api/modules.html#modules_require_resolve
+    let milligramCssFilePath = require.resolve('milligram');
+
+    // return the milligram dist directory path
+    // https://nodejs.org/api/path.html#path_path_dirname_path
+    let milligramCssDir = path.dirname(milligramCssFilePath);
+
+    // Include the compiled dist `.css` directory
+    app.options.sassOptions.includePaths.push(milligramCssDir);
   }
 };
