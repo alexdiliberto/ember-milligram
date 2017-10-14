@@ -59,9 +59,3 @@ ember deploy production
 MIT Copyright (c) [Alex DiLiberto](https://alexdiliberto.com/)
 
 [Milligram](http://milligram.io/) was designed with ♥ by [CJ Patoilo](http://cjpatoilo.com/). Licensed under the [MIT License](https://github.com/milligram/milligram/blob/master/license).
-
-
-[travis-badge]: https://travis-ci.org/alexdiliberto/ember-milligram.svg?branch=master
-[travis-url]: https://travis-ci.org/alexdiliberto/ember-milligram
-[cz-badge]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
-[cz-cli-url]: https://commitizen.github.io/cz-cli/
