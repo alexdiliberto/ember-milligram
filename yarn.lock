@@ -2,24 +2,24 @@
 # yarn lockfile v1
 
 
-"@commitlint/cli@^4.1.1":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-4.2.0.tgz#6ba6717bd894e0298d2a22242e9b316d5764c621"
+"@commitlint/cli@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-4.2.1.tgz#5b1a99db20f54e3548d9f8ffbb722f8c7134a066"
   dependencies:
-    "@commitlint/core" "^4.2.0"
+    "@commitlint/core" "^4.2.1"
     babel-polyfill "^6.23.0"
     chalk "^2.0.1"
     get-stdin "^5.0.1"
     lodash "^4.17.4"
     meow "^3.7.0"
 
-"@commitlint/config-angular@^4.2.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-angular/-/config-angular-4.2.0.tgz#1f6f5211b623870dc0fd3c8061c6d5827ba6897e"
+"@commitlint/config-angular@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-angular/-/config-angular-4.2.1.tgz#95b8b9975591047308afb109bd63a4298616eb5b"
 
-"@commitlint/core@^4.2.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/core/-/core-4.2.0.tgz#c5b55f0258b7f5168fc60a72d204bf5b2eb04193"
+"@commitlint/core@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/core/-/core-4.2.1.tgz#c836f20005f75ceaf28594af7a9cca09dc780115"
   dependencies:
     "@marionebl/git-raw-commits" "^1.2.0"
     "@marionebl/sander" "^0.6.0"
