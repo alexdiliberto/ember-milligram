@@ -2,24 +2,30 @@
 # yarn lockfile v1
 
 
-"@commitlint/cli@^4.3.0":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-4.3.0.tgz#b0d45fb712a5b9c0daa48b07594b68c384fd4dc7"
+"@commitlint/cli@^5.0.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-5.1.1.tgz#214cd97c45bd1965c4ff2a5b266516017458c00f"
   dependencies:
-    "@commitlint/core" "^4.3.0"
-    babel-polyfill "^6.23.0"
-    chalk "^2.0.1"
-    get-stdin "^5.0.1"
-    lodash "^4.17.4"
-    meow "^3.7.0"
+    "@commitlint/core" "^5.1.1"
+    babel-polyfill "6.26.0"
+    chalk "2.3.0"
+    get-stdin "5.0.1"
+    lodash "4.17.4"
+    meow "3.7.0"
 
-"@commitlint/config-angular@^4.3.0":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-angular/-/config-angular-4.3.0.tgz#c05fd9c30f8dd0c32c549bb1587e8af2c2769765"
+"@commitlint/config-angular-type-enum@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-angular-type-enum/-/config-angular-type-enum-5.1.1.tgz#cabda0be798e95369fc401046dfddf0c5906f0ff"
 
-"@commitlint/core@^4.3.0":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/core/-/core-4.3.0.tgz#e881a0a16594af3ade09be4d12b770b9913bc261"
+"@commitlint/config-angular@^5.0.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-angular/-/config-angular-5.1.1.tgz#3f13debe83a12cd4004e86b72b77ff076d4c6385"
+  dependencies:
+    "@commitlint/config-angular-type-enum" "^5.1.1"
+
+"@commitlint/core@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/core/-/core-5.1.1.tgz#72163b9b6083fe44bb4a902f69edf14f70b75afc"
   dependencies:
     "@marionebl/conventional-commits-parser" "^3.0.0"
     "@marionebl/git-raw-commits" "^1.2.0"
@@ -31,7 +37,9 @@
     find-up "^2.1.0"
     lodash "^4.17.4"
     path-exists "^3.0.0"
-    resolve-from "^3.0.0"
+    require-uncached "^1.0.3"
+    resolve-from "^4.0.0"
+    resolve-global "^0.1.0"
     semver "^5.3.0"
 
 "@ember/test-helpers@^0.7.1":
@@ -901,7 +909,7 @@ babel-plugin-undefined-to-void@^1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/babel-plugin-undefined-to-void/-/babel-plugin-undefined-to-void-1.1.6.tgz#7f578ef8b78dfae6003385d8417a61eda06e2f81"
 
-babel-polyfill@^6.16.0, babel-polyfill@^6.23.0:
+babel-polyfill@6.26.0, babel-polyfill@^6.16.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-polyfill/-/babel-polyfill-6.26.0.tgz#379937abc67d7895970adc621f284cd966cf2153"
   dependencies:
@@ -1632,6 +1640,14 @@ chalk@1.1.3, chalk@^1.0.0, chalk@^1.1.1, chalk@^1.1.3:
     has-ansi "^2.0.0"
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
+
+chalk@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.3.0.tgz#b5ea48efc9c1793dccc9b4767c93914d3f2d52ba"
+  dependencies:
+    ansi-styles "^3.1.0"
+    escape-string-regexp "^1.0.5"
+    supports-color "^4.0.0"
 
 chalk@^0.5.1:
   version "0.5.1"
@@ -3592,13 +3608,13 @@ get-pkg-repo@^1.0.0:
     parse-github-repo-url "^1.3.0"
     through2 "^2.0.0"
 
+get-stdin@5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-5.0.1.tgz#122e161591e21ff4c52530305693f20e6393a398"
+
 get-stdin@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-4.0.1.tgz#b968c6b0a04384324902e8bf1a5df32579a450fe"
-
-get-stdin@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-5.0.1.tgz#122e161591e21ff4c52530305693f20e6393a398"
 
 get-stream@^3.0.0:
   version "3.0.0"
@@ -3698,6 +3714,12 @@ glob@^7.0.0, glob@^7.0.3, glob@^7.0.4, glob@^7.0.5, glob@^7.1.1, glob@^7.1.2, gl
     minimatch "^3.0.4"
     once "^1.3.0"
     path-is-absolute "^1.0.0"
+
+global-dirs@^0.1.0:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/global-dirs/-/global-dirs-0.1.1.tgz#b319c0dd4607f353f3be9cca4c72fc148c49f445"
+  dependencies:
+    ini "^1.3.4"
 
 global-modules@^0.2.3:
   version "0.2.3"
@@ -4888,13 +4910,13 @@ lodash@4.17.2:
   version "4.17.2"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.2.tgz#34a3055babe04ce42467b607d700072c7ff6bf42"
 
+lodash@4.17.4, lodash@^4.0.0, lodash@^4.1.0, lodash@^4.14.0, lodash@^4.17.4, lodash@^4.2.1, lodash@^4.3.0, lodash@^4.6.1, lodash@~4.17.4:
+  version "4.17.4"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
+
 lodash@^3.10.0, lodash@^3.10.1, lodash@^3.9.3:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
-
-lodash@^4.0.0, lodash@^4.1.0, lodash@^4.14.0, lodash@^4.17.4, lodash@^4.2.1, lodash@^4.3.0, lodash@^4.6.1, lodash@~4.17.4:
-  version "4.17.4"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
 log-symbols@^1.0.2:
   version "1.0.2"
@@ -5003,7 +5025,7 @@ memory-streams@^0.1.0:
   dependencies:
     readable-stream "~1.0.2"
 
-meow@^3.3.0, meow@^3.7.0:
+meow@3.7.0, meow@^3.3.0, meow@^3.7.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/meow/-/meow-3.7.0.tgz#72cb668b425228290abbfa856892587308a801fb"
   dependencies:
@@ -6061,9 +6083,15 @@ resolve-from@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-1.0.1.tgz#26cbfe935d1aeeeabb29bc3fe5aeb01e93d44226"
 
-resolve-from@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-3.0.0.tgz#b22c7af7d9d6881bc8b6e653335eebcb0a188748"
+resolve-from@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-4.0.0.tgz#4abcd852ad32dd7baabfe9b40e00a36db5f392e6"
+
+resolve-global@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/resolve-global/-/resolve-global-0.1.0.tgz#8fb02cfd5b7db20118e886311f15af95bd15fbd9"
+  dependencies:
+    global-dirs "^0.1.0"
 
 resolve@1.3.2:
   version "1.3.2"
