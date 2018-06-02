@@ -37,7 +37,7 @@
     "ember-cli-babel": "^6.11.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^6.0.2",
+    "@commitlint/cli": "^7.0.0",
     "@commitlint/config-angular": "^6.0.2",
     "broccoli-asset-rev": "^2.4.5",
     "commitizen": "^2.9.6",
