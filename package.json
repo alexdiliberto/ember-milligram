@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^6.0.2",
-    "@commitlint/config-angular": "^6.0.2",
+    "@commitlint/config-angular": "^7.0.0",
     "broccoli-asset-rev": "^2.4.5",
     "commitizen": "^2.9.6",
     "conventional-changelog-cli": "^1.3.5",
