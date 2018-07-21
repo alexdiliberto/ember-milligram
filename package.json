@@ -82,6 +82,23 @@
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
   },
+  "greenkeeper": {
+    "ignore": [
+      "broccoli-asset-rev",
+      "ember-cli",
+      "ember-cli-dependency-checker",
+      "ember-cli-eslint",
+      "ember-cli-htmlbars",
+      "ember-cli-htmlbars-inline-precompile",
+      "ember-cli-inject-live-reload",
+      "ember-load-initializers",
+      "ember-resolver",
+      "ember-source",
+      "ember-source-channel-url",
+      "ember-try",
+      "loader.js"
+    ]
+  },
   "ember-addon": {
     "configPath": "tests/dummy/config",
     "demoURL": "http://alexdiliberto.com/ember-milligram"
