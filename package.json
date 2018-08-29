@@ -34,7 +34,7 @@
     "version": "yarn changelog && git add CHANGELOG.md"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.11.0"
+    "ember-cli-babel": "^7.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^6.0.2",
