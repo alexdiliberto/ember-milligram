@@ -72,7 +72,7 @@
     "husky": "^0.14.3",
     "loader.js": "^4.2.3",
     "milligram": "^1.3.0",
-    "np": "^3.0.4"
+    "np": "^4.0.0"
   },
   "config": {
     "commitizen": {
