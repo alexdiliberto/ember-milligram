@@ -1,3 +1,17 @@
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
+# DEPRECATED
+
+You probably don't need this addon. If you want to use the Milligram CSS framework in your Ember app, simply install the dependency (`yarn add -D milligram`) then add the following line to your [`ember-cli-build.js` file](https://guides.emberjs.com/release/addons-and-dependencies/#toc_css):
+
+```js
+app.import('node_modules/milligram/dist/milligram.css');
+```
+
+Now Milligram will be compiled into your final `/dist/vendor.css` asset
+
+<hr>
+
 <h1 align="center">
   <img width="232px" height="335px" src="https://cdn.rawgit.com/alexdiliberto/ember-milligram/master/tests/dummy/public/img/logo.svg" alt="Milligram Logo">
   <br>
